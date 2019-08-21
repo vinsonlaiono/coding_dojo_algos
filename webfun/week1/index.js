@@ -22,8 +22,24 @@ function printIntAndSum(){
     }
 }
 // 4. Iterate and Print Array
-function iterateAndPrintArr(array){
-    for(let i=0; i<array.length; i++){
-        console.log(array[i]);
+function iterateAndPrintArr(arr){
+    for(let i=0; i<arr.length; i++){
+        console.log(arr[i]);
     }
+}
+// 5. Find and Print Max
+function findAndPrintMaX(arr){
+    let max = 0;
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] > max) max=arr[i];
+    }
+    console.log(max);
+}
+// 6. Get and Print Average
+function getAndPrintAvg(arr){
+    let sum = 0;
+    for(let i=0; i<arr.length; i++){
+        sum+=arr[i];
+    }
+    console.log(sum/arr.length);
 }
