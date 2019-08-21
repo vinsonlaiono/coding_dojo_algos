@@ -43,3 +43,26 @@ function getAndPrintAvg(arr){
     }
     console.log(sum/arr.length);
 }
+// 8. Square the Values
+function squareTheValuesOneLiner(arr){
+    return arr.map(value => value*value);
+}
+function squareTheValues(arr){
+    for(let i=0; i<arr.length; i++){
+        arr[i] = arr[i] * arr[i];
+    }
+    console.log(arr);
+}
+// 9. Greater than Y
+    function greaterThanY(arr){
+        let count = 0;
+        for(let i=0; i<arr.length; i++){
+            if(arr[i] > y){
+                count++;
+                console.log(arr[i]);
+                console.log(count);
+            }
+        }
+    }
+
+
